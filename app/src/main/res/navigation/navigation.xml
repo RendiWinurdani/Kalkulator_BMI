@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="org.d3if4084.kalkulatorbmi.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_menjagaTetapIdeal"
+            app:destination="@id/menjagaTetapIdeal" />
+        <action
+            android:id="@+id/action_menu_to_mengatasiKekurusan"
+            app:destination="@id/mengatasiKekurusan" />
+        <action
+            android:id="@+id/action_menu_to_mengatasiKegemukan"
+            app:destination="@id/mengatasiKegemukan" />
+    </fragment>
+    <fragment
+        android:id="@+id/about"
+        android:name="org.d3if4084.kalkulatorbmi.About"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/mengatasiKegemukan"
+        android:name="org.d3if4084.kalkulatorbmi.MengatasiKegemukan"
+        android:label="fragment_mengatasi_kegemukan"
+        tools:layout="@layout/fragment_mengatasi_kegemukan" />
+    <fragment
+        android:id="@+id/menjagaTetapIdeal"
+        android:name="org.d3if4084.kalkulatorbmi.MenjagaTetapIdeal"
+        android:label="fragment_menjaga_tetap_ideal"
+        tools:layout="@layout/fragment_menjaga_tetap_ideal" />
+    <fragment
+        android:id="@+id/mengatasiKekurusan"
+        android:name="org.d3if4084.kalkulatorbmi.MengatasiKekurusan"
+        android:label="fragment_mengatasi_kekurusan"
+        tools:layout="@layout/fragment_mengatasi_kekurusan" />
+</navigation>
